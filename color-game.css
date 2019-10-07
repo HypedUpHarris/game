@@ -1,17 +1,16 @@
 body {
-  background-color: #232323;
+  background-color: rgb(216, 206, 206);
   margin: 0;
-  font-family: 'Lora', serif;
+  font-family: 'Lato', serif;
 }
 #overlay {
-  background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #434343, #000000);
-background: linear-gradient(to top, #434343, #000000);
+  background: rgb(216, 206, 206);  /* fallback for old browsers */
   text-align: center;
   display: flex;
+  font-size: 2rem;
   flex-direction: column;
   position: fixed;
-  color: #FFFFFF;
+  color: #111;
   justify-content: center;
   top: 0;
   bottom: 0;
@@ -44,7 +43,7 @@ p{
 }
 .play{
   border: 1px solid grey;
-  color: #fff;
+  color: #111;
   padding: .1em 1em;
   margin: 2em auto;
   background: transparent;
@@ -61,6 +60,11 @@ p{
   -moz-transition: all .5s;
   border-radius: .5em;
 }
+.wrapper {
+  background-color: #fff;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
 #container{
   margin: 10% auto;
 }
@@ -70,7 +74,7 @@ h1 {
   -moz-transition: all .5s;
   color: white;
   text-align: center;
-  background: #222;
+  background: white;
   margin: 0;
   text-transform: uppercase;
   line-height: 1.5;
@@ -117,6 +121,15 @@ button:focus{
   #container{
     width: 80%;
   }
+  .wrapper {
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+  }
+
 }
 @media (min-width: 1024px) {
   #colorDisplay {

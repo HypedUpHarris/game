@@ -3,44 +3,48 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/ico" href="../img/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="color-game.css">
     <title>R.G.B.</title>
   </head>
   <body>
     <div id="overlay" class="start">
+
       <h2 class="title"><span class="r">R</span>.<span class="g">G</span>.<span class="b">B</span>.</h2>
       <a class="play">Play</a>
       <p>"Red Green Blue." It refers to the three hues of light that can mix together to form any color.</p>
       <p class="author">Created By Michael Harris</p>
     </div>
-      <h1>
-        <span class="r">R</span>.<span class="g">G</span>.<span class="b">B</span>.
-        <br>
-        <span id="colorDisplay">RGB</span>
-        <br>
-       </h1>
-
-      <div id="stripe">
-        <button id="reset">New Colors</button>
-        <span id="message"></span>
-        <button class="mode">Easy</button>
-        <button class="mode selected">Hard</button>
-        <input type="checkbox" class=hint>?</button>
-      </div>
-
-      <div id="container">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-
-
-      </div>
-      <img class="hintImg" src="../img/rgb.png" alt="rgb">
-
+    <div class="wrapper">
+        <h1>
+            <span class="r">R</span>.<span class="g">G</span>.<span class="b">B</span>.
+            <br>
+            <span id="colorDisplay">RGB</span>
+            <br>
+           </h1>
+    
+          <div id="stripe">
+            <button id="reset">New Colors</button>
+            <span id="message"></span>
+            <button class="mode">Easy</button>
+            <button class="mode selected">Hard</button>
+            <input type="checkbox" class=hint>?</button>
+          </div>
+    
+          <div id="container">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+    
+    
+          </div>
+          <img class="hintImg" src="../img/rgb.png" alt="rgb">
+    
+    </div>
+      
 
 
   <script src="colorgame.js"></script>

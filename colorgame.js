@@ -19,6 +19,7 @@ play.addEventListener('click', () => {
     init();
 });
 
+
 function init(){
   //modeButtons event listeners
   for( var i = 0; i<modeButtons.length; i++){
@@ -42,7 +43,7 @@ function init(){
         changeColors(clickedColor);
         h1.style.backgroundColor = clickedColor;
       } else {
-        this.style.backgroundColor = '#232323';
+        this.style.backgroundColor = 'white';
         messageDisplay.textContent = "Try Again";
       }
     });
